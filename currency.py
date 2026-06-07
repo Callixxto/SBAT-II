@@ -19,12 +19,25 @@ def currency_converter():
     print(f"Converted amount: {converted}")
 
 
+def daily_savings_goal():
+    target = float(input("Target amount: "))
+    days = int(input("Days to save: "))
+
+    if days <= 0:
+        print("Days must be greater than zero.")
+        return
+
+    daily = target / days
+    print(f"You need to save {daily:.2f} per day.")
+
+
 def main():
     while True:
         print("\n=== Personal Finance Tool ===")
         print("1. Savings Calculator")
         print("2. Currency Converter")
-        print("3. Exit")
+        print("3. Daily Savings Goal")
+        print("4. Exit")
 
         choice = input("Choose an option: ")
 
@@ -33,6 +46,8 @@ def main():
         elif choice == "2":
             currency_converter()
         elif choice == "3":
+            daily_savings_goal()
+        elif choice == "4":
             print("Goodbye! Thank you for using the Personal Finance Tool.")
             break
         else:
