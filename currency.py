@@ -1,4 +1,4 @@
-#So it's going to be example nr 2 
+#So it's going to be example nr 1 
 # I just made something quickly xd
 
 def savings_calc():
