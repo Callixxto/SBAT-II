@@ -1,5 +1,5 @@
 def calculate_savings(income, expenses):
-    return income + expenses
+    return income - expenses
 
 
 def calculate_currency(amount, rate):
