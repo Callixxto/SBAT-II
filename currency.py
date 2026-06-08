@@ -1,6 +1,3 @@
-#So it's going to be example nr 1 
-# I just made something quickly xd
-
 def savings_calc():
     income = float(input("Monthly income: "))
     expenses = float(input("Monthly expenses: "))
@@ -17,7 +14,6 @@ def currency_converter():
     converted = amount / rate
 
     print(f"Converted amount: {converted}")
-
 
 def daily_savings_goal():
     target = float(input("Target amount: "))
