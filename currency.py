@@ -1,8 +1,20 @@
+def calculate_savings(income, expenses):
+    return income - expenses
+
+
+def calculate_currency(amount, rate):
+    return amount / rate
+
+
+def calculate_daily_goal(target, days):
+    return target / days
+
+
 def savings_calc():
     income = float(input("Monthly income: "))
     expenses = float(input("Monthly expenses: "))
 
-    savings = income - expenses
+    savings = calculate_savings(income, expenses)
 
     print(f"Monthly savings: {savings}")
 
@@ -11,9 +23,10 @@ def currency_converter():
     amount = float(input("Amount in PLN: "))
     rate = float(input("Exchange rate (PLN to target currency): "))
 
-    converted = amount / rate
+    converted = calculate_currency(amount, rate)
 
     print(f"Converted amount: {converted}")
+
 
 def daily_savings_goal():
     target = float(input("Target amount: "))
@@ -23,7 +36,7 @@ def daily_savings_goal():
         print("Days must be greater than zero.")
         return
 
-    daily = target / days
+    daily = calculate_daily_goal(target, days)
     print(f"You need to save {daily:.2f} per day.")
 
 
