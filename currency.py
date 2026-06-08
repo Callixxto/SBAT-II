@@ -1,6 +1,3 @@
-#So it's going to be example nr 1 
-# I just made something quickly xd
-
 def savings_calc():
     income = float(input("Monthly income: "))
     expenses = float(input("Monthly expenses: "))
@@ -18,13 +15,16 @@ def currency_converter():
 
     print(f"Converted amount: {converted}")
 
+def new_function():
+    print("This is a new function added to the code.")
+
 
 def main():
     while True:
         print("\n=== Personal Finance Tool ===")
         print("1. Savings Calculator")
         print("2. Currency Converter")
-        print("3. Exit")
+        print("3. Quit the application.")
 
         choice = input("Choose an option: ")
 
